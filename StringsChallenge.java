@@ -17,7 +17,7 @@ public class StringsChallenge
      * withoutEnd("coding") → "odin"
      */
     public static String withoutEnd(String str) {
-        
+        return str.substring(1, str.length() - 1);
     }
 
     /**
@@ -30,7 +30,10 @@ public class StringsChallenge
      * frontAgain("ed") → true
      */
     public static boolean frontAgain(String str) {
-        
+        if(str.length() < 2)  {
+            return false;
+        }
+        return str.endsWith(str.substring(0, 2));
     }
 
     /**
@@ -44,7 +47,14 @@ public class StringsChallenge
      * deFront("away") → "aay"
      */
     public static String deFront(String str) {
-        
+        String retString = str.substring(2);
+        if(str.charAt(1) == 'b') {
+            retString = "b" + retString;
+        }
+        if(str.charAt(0) == 'a') {
+            retString = "a" + retString;
+        }
+        return retString;
     }
 
     /** 
@@ -60,7 +70,10 @@ public class StringsChallenge
      * without2("Hi") → ""
      */
     public static String without2(String str) {
-        
+        if(str.length() >= 2 && str.endsWith(str.substring(0, 2))) {
+            return str.substring(2);
+        }
+        return str;
     }
 
     /**
@@ -74,6 +87,12 @@ public class StringsChallenge
      * withoutX2("Hi") → "Hi"
      */
     public static String withoutX2(String str) {
-        
+        if(str.length() >= 2 && str.charAt(1) == 'x') {
+            str = str.charAt(0) + str.substring(2);
+        }
+        if(str.length() >= 1 && str.charAt(0) == 'x') {
+            str = str.substring(1);
+        }
+        return str;
     }
 }
