@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=StringsChallenge
+comment0.text=\n\ Write\ a\ description\ of\ class\ StringsChallenge\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=str
+comment1.target=java.lang.String\ withoutEnd(java.lang.String)
+comment1.text=\n\ Given\ a\ string,\ return\ a\ version\ without\ the\ first\ and\ last\ char,\ so\ \n\ "Hello"\ yields\ "ell".\ The\ string\ length\ will\ be\ at\ least\ 2.\n\ \n\ Examples\:\n\ withoutEnd("Hello")\ \u2192\ "ell"\n\ withoutEnd("java")\ \u2192\ "av"\n\ withoutEnd("coding")\ \u2192\ "odin"\n
+comment2.params=str
+comment2.target=boolean\ frontAgain(java.lang.String)
+comment2.text=\n\ Given\ a\ string\ of\ any\ length,\ return\ true\ if\ the\ first\ 2\ characters\ in\ \n\ the\ string\ also\ appear\ at\ the\ end\ of\ the\ string,\ such\ as\ with\ "edited".\n\ \n\ Examples\:\n\ frontAgain("edited")\ \u2192\ true\n\ frontAgain("edit")\ \u2192\ false\n\ frontAgain("ed")\ \u2192\ true\n
+comment3.params=str
+comment3.target=java.lang.String\ deFront(java.lang.String)
+comment3.text=\n\ Given\ a\ string,\ return\ a\ version\ without\ the\ first\ 2\ characters.\ Except\ \n\ keep\ the\ first\ character\ if\ it\ is\ 'a'\ and\ keep\ the\ second\ character\ if\ \n\ it\ is\ 'b'.\ The\ string\ length\ will\ be\ at\ least\ 2.\n\ \n\ Examples\:\n\ deFront("Hello")\ \u2192\ "llo"\n\ deFront("java")\ \u2192\ "va"\n\ deFront("away")\ \u2192\ "aay"\n
+comment4.params=str
+comment4.target=java.lang.String\ without2(java.lang.String)
+comment4.text=\ \n\ Given\ a\ string\ of\ any\ length,\ if\ a\ length\ 2\ substring\ appears\ at\ both\ \n\ its\ beginning\ and\ end,\ return\ a\ string\ without\ the\ substring\ at\ the\ \n\ beginning,\ so\ "HelloHe"\ yields\ "lloHe".\ The\ substring\ may\ overlap\ with\ \n\ itself,\ so\ "Hi"\ yields\ "".\ Otherwise,\ return\ the\ original\ string\ \n\ unchanged.\n\ \n\ Examples\:\n\ without2("HelloHe")\ \u2192\ "lloHe"\n\ without2("HelloHi")\ \u2192\ "HelloHi"\n\ without2("Hi")\ \u2192\ ""\n
+comment5.params=str
+comment5.target=java.lang.String\ withoutX2(java.lang.String)
+comment5.text=\n\ Given\ a\ string\ of\ any\ length,\ if\ one\ or\ both\ of\ the\ first\ 2\ chars\ is\ \n\ 'x',return\ the\ string\ without\ those\ 'x'\ chars,\ and\ otherwise\ return\ \n\ the\ string\ unchanged.\n\ \n\ Examples\:\n\ withoutX2("xHi")\ \u2192\ "Hi"\n\ withoutX2("Hxi")\ \u2192\ "Hi"\n\ withoutX2("Hi")\ \u2192\ "Hi"\n
+numComments=6
